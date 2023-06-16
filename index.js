@@ -10,7 +10,20 @@ const users = [
 ];
 
 function main() {
-
+    //Grab root function
+    const rootElement = document.getElementById("root")
+    //create h1 element and assign FREELANCERS to it 
+    const newHeadingOne = document.createElement("h1")
+    newHeadingOne.innerHTML = "FREELANCERS"
+    rootElement.appendChild(newHeadingOne)
+    //create unorder list element
+    const newUnorderedList = document.createElement("ul")
+    for (let person of users) {
+        const li = document.createElement('li');
+        li.innerHTML = person.name;
+        newUnorderedList.appendChild(li);
+    }
+    rootElement.appendChild(newUnorderedList);
 }
 
 //call the main function

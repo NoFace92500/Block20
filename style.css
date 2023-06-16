@@ -1,0 +1,10 @@
+li {
+    color: blue;
+    padding: 2px;
+}
+
+h1 {
+    text-align: center;
+    border: dotted 2px black;
+    padding: 2px
+}
